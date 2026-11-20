@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package protobuf;
+
+message Time {
+  required int32 hour = 1;
+  required int32 minute = 2;
+  required int32 second = 3;
+}
+
+message Reading {
+  required int32 publisher_id = 1;
+  required float temperature = 2;
+  required Time time = 3;
+}
